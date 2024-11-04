@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+#toggle-size-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.calculator {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+}
+
+.calculator.full-page {
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    max-height: none;
+}
+
+.calculator.reduced-size {
+    width: 400px;
+    height: auto;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px 10px 0 0;
+}
+
+#history {
+    font-size: 18px;
+    color: gray;
+}
+
+#result {
+    font-size: 36px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
+
+button:active {
+    background-color: #d4d4d4;
+}
+
+button.span-two {
+    grid-column: span 2;
+}
+
+button:hover {
+    background-color: #cfcfcf;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for the button layout */
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+button {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button:active {
+    background-color: #d0d0d0;
+}
+
+button.span-two {
+    grid-column: span 2; /* Span two columns */
+}
+
+button.span-three {
+    grid-column: span 3; /* Span three columns (if needed) */
+}
+
+/* New styles for the "=" button */
+button.equals {
+    background-color: #007bff; /* Blue color */
+    color: white; /* White text color */
+}
+
+button.equals:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+#memory-indicator {
+    display: inline-block;
+    width: 20px;
+    color: red;
+}
